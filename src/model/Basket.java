@@ -1,5 +1,6 @@
 package model;
 import java.util.LinkedList;
+import model.product.ProductsToys;
 
 public class Basket {
 
@@ -29,5 +30,10 @@ public class Basket {
         return count;
     }
 
-
+    @Override
+    public String toString() {
+        return "Basket{" +
+            "productsList=" + productsList +
+            '}';
+    }
 }

@@ -1,12 +1,16 @@
-package model;
+package model.product;
 
 public class ProductsToys extends Products {
 
     private String color;
 
-    public ProductsToys(String type, String name, String manufacturer, String barcode, int price, String color) {
+    public ProductsToys(ToyType type, String name, String manufacturer, String barcode, int price, String color) {
         super(type, name, manufacturer, barcode, price);
         this.color = color;
+    }
+
+    public ProductsToys(ToyType type, String name) {
+        super(type, name);
     }
 
     public String getColor() {
